@@ -138,7 +138,7 @@
                                 <a class="nav-link color-green-hover" href="media.html">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link color-green-hover" href="">Application Form</a>
+                                <a class="nav-link color-green-hover" href="application_form.html">Application Form</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link color-green-hover" href="contact-us.html">Contact Us</a>
@@ -152,21 +152,19 @@
         <!-- end header -->
 
         <!-- Start slider -->
-        <section>
+        <!-- <section>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('assets/images/slider/Slide-1.png');">
+\                <div class="carousel-item active" style="background-image: url('assets/images/slider/Slide-1.png');">
                 <div class="carousel-caption d-none d-md-block">
                     <h3 class="display-4">VENUE MARINA BAY SANDS <br> SANDS CONVENTION HALL</h3>
                     <p class="lead">27-29 March 2020</p>
                 </div>
                 </div>
-                <!-- Slide Two - Set the background image for this slide in the line below -->
                 <div class="carousel-item" style="background-image: url('assets/images/slider/Slide-2.png')">
                 <div class="carousel-caption d-none d-md-block" style="color: aqua;">
                     <h3 class="display-4">VENUE MARINA BAY SANDS <br> SANDS CONVENTION HALL</h3>
@@ -183,8 +181,48 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </section>
+        </section> -->
         <!-- / slider -->
+
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <picture class="w-100">
+                            <source media="(min-width: 768px)" srcset="assets/images/slider/Slide-1.png">
+                            <img class="d-block w-100" src="assets/images/slider/Slide-1.png" alt="">
+                        </picture>
+                        <div class="carousel-caption d-none d-md-block" style="position: absolute;">
+                            <h3 class="display-4">VENUE MARINA BAY SANDS <br> SANDS CONVENTION HALL</h3>
+                            <p class="lead">27-29 March 2020</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <picture class="w-100">
+                            <source media="(min-width: 768px)" srcset="assets/images/slider/Slide-2.png">
+                            <img class="d-block w-100" src="assets/images/slider/Slide-2.png" alt="">
+                        </picture>
+                        <div class="carousel-caption d-none d-md-block" style="position: absolute;">
+                            <h3 class="display-4">VENUE MARINA BAY SANDS <br> SANDS CONVENTION HALL</h3>
+                            <p class="lead">27-29 March 2020</p>
+                        </div>
+                    </div>
+
+                    </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
 
         <!-- Starting map -->
         <div class="container">
@@ -391,6 +429,7 @@
                                     <span class="bar"></span>
                                     <label>Email</label>
                                 </div>
+                                <input class="btn btn-submit w-100" type="submit" value="Submit">
                             </form>
                         </div>
                     </div>

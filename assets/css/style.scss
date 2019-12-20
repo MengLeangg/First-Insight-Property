@@ -160,9 +160,7 @@ h2{
 .navbar-toggler,
 .masonry-box:hover .blog-meta span.bg-aqua,
 .blog-meta span.bg-aqua,
-.search-form .btn:hover, .search-form .btn:focus, .search-form .btn,
-.btn,
-.btn:hover,
+.search-form, .search-form .btn:focus, .search-form ,
 .dropdown-item:hover,
 .dropdown-item:focus,
 .btn:focus,
@@ -251,11 +249,12 @@ a:focus,
 }
 .carousel-item {
   // height: 100vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  height: 720px !important;
+  // min-height: 350px;
+  // background: no-repeat center center scroll;
+  // background-size: cover;
+  // height: 720px !important;
 }
+
 .carousel-caption h3{
   color: #fff;
 }
@@ -327,7 +326,6 @@ a:focus,
     border-radius: 2em;
     color: $color-main;
     cursor: pointer;
-    display: flex;
     align-self: center;
     font-size: 1rem;
     font-weight: 400;
@@ -1182,6 +1180,7 @@ a:focus,
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: $color-main;
   box-shadow: 0 0 10px 5px;
+  border-radius: 10px;
 }
 .group 			  { 
   position:relative; 
@@ -1266,4 +1265,11 @@ input:focus ~ .highlight {
 @keyframes inputHighlighter {
 	from { background:$color-main; }
   to 	{ width:0; background:transparent; }
+}
+
+.btn-submit{
+  border-radius: 10px !important;
+}
+.btn-submit:hover{
+  // background-color: #fff !important;
 }

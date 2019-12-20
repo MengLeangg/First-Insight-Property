@@ -102,9 +102,7 @@ h2 {
 .navbar-toggler,
 .masonry-box:hover .blog-meta span.bg-aqua,
 .blog-meta span.bg-aqua,
-.search-form .btn:hover, .search-form .btn:focus, .search-form .btn,
-.btn,
-.btn:hover,
+.search-form, .search-form .btn:focus, .search-form,
 .dropdown-item:hover,
 .dropdown-item:focus,
 .btn:focus,
@@ -196,13 +194,6 @@ a:focus,
   margin-top: 50px !important;
 }
 
-.carousel-item {
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  height: 720px !important;
-}
-
 .carousel-caption h3 {
   color: #fff;
 }
@@ -245,10 +236,8 @@ a:focus,
   border-radius: 2em;
   color: #150A59;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   font-size: 1rem;
   font-weight: 400;
@@ -1284,6 +1273,7 @@ a:focus,
   color: #150A59;
   -webkit-box-shadow: 0 0 10px 5px;
           box-shadow: 0 0 10px 5px;
+  border-radius: 10px;
 }
 
 .group {
@@ -1391,5 +1381,9 @@ input:focus ~ .highlight {
     width: 0;
     background: transparent;
   }
+}
+
+.btn-submit {
+  border-radius: 10px !important;
 }
 /*# sourceMappingURL=style.css.map */
