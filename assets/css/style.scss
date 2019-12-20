@@ -16,7 +16,8 @@ $gray-light:                #cccccc;
 $gray-lighter:              #ececec;
 $gray-lightest:             lighten($gray-lighter,4%);
 
-$main-font : 'Arial', Battambang;
+// $main-font : 'Arial', Battambang;
+$main-font : 'HelveticaNeueLTStd', Battambang;
 
 $color-main: #150A59;
 $white : #fff;
@@ -816,7 +817,7 @@ a:focus,
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
-  letter-spacing:2px
+  letter-spacing: 0.5px;
 }
 .site-footer a , .site-footer a p
 {
@@ -835,6 +836,12 @@ a:focus,
 .footer-links a
 {
   color:$color-main;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none;
 }
 .footer-links a:hover
 {
@@ -1163,4 +1170,100 @@ a:focus,
 }
 .animated.moveUp {
   animation-name: moveUp;
+}
+
+// Form Control
+.app-form{
+  width: 500px;
+  margin: 0 auto;
+  background-color: red;
+  padding: 15px 35px 45px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: $color-main;
+  box-shadow: 0 0 10px 5px;
+}
+.group 			  { 
+  position:relative; 
+  margin-bottom:30px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:$color-main;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width: 100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:$color-main; 
+  transition:0.2s ease all; 
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:$color-main; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:$color-main; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:$color-main; }
+  to 	{ width:0; background:transparent; }
 }
