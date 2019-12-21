@@ -250,4 +250,14 @@
     .email-language{
         text-align: center !important;
     }
+    .lb-header a{
+        font-size: 13px !important;
+        text-align: center !important;
+        display: inline-block;
+    }
 }
+/* @media (max-width: 1200px){
+    .lb-header .active{
+        font-size: .7em !important;
+      }
+} */
