@@ -795,10 +795,12 @@ a:focus,
   background-size: cover;
   position: relative;
   //background-color:$color-main;
-  //padding:45px 0 20px;
+  padding:45px 0 0px;
   font-size:15px;
   line-height:24px;
   color:#737373;
+  box-shadow: 0 -5px 5px -5px $color-main;
+  box-sizing: border-box;
 }
 .site-footer hr
 {
@@ -1179,7 +1181,7 @@ a:focus,
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: $color-main;
-  box-shadow: 0 0 10px 5px;
+  box-shadow: 0 0 5px 2px;
   border-radius: 10px;
 }
 .group 			  { 
