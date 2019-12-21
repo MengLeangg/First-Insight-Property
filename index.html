@@ -28,6 +28,7 @@
 <!-- FontAwesome Icons core CSS -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
+
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="assets/css/default_style.css">
 
@@ -39,6 +40,7 @@
 
 <!-- Version Garden CSS for this template -->
 <link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/App-form.css" rel="stylesheet">
 
 <!-- script for jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -347,7 +349,143 @@
             </div>
         </section>
 
-        <section>
+        <!-- Applicatiob Form  -->
+        <div id="app-form" class="container">
+            <div class="row mt-5 animatable bounceIn text-center">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Application Form</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8">
+                    <div class="login-box">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="lb-header">
+                                    <a href="#app-form" class="active" id="company-link">Company Detail</a>
+                                    <a href="#app-form" id="participation-link">Participation</a>
+                                    <a href="#app-form" id="payment-link">Payment</a>
+                                </div>
+                            </div>
+                        </div>
+
+                <form action="">
+                    <div class="company-detail">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Company Name</label>
+                                </div>
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Phone</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Company Address</label>
+                                </div>
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Website</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Tax Reg. No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-submit btn-submit-hover">Submit</button>
+                    </div>
+
+                    <div class="participation">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Name</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Phone</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-submit btn-submit-hover">Submit</button>
+                    </div>
+
+                    <div class="payment">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Name</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Work Phone</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="group">      
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-submit btn-submit-hover">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-2"></div>
+        </div>
+
+        <!-- <section>
             <div class="container">
                 <div class="row mt-5 animatable bounceIn text-center">
                     <div class="col-lg-12">
@@ -435,7 +573,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <section class="mt-5">
@@ -615,6 +753,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/function.js"></script>
+    <script src="assets/js/App-form.js"></script>
     <script src="assets/js/Magnific_popup.js"></script>
 
     <!-- script for magnific popup -->
