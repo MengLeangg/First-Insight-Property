@@ -13,14 +13,13 @@
 .lb-header {
   position: relative;
   color: #00415d;
-  margin: 20px 5px 10px 5px;
+  margin: 20px 0 0 5px;
   padding-bottom: 10px;
   text-align: center;
   height: 28px;
 }
 
 .lb-header a {
-  margin: 0 25px;
   width: 100%;
   padding: 0 20px;
   text-decoration: none;

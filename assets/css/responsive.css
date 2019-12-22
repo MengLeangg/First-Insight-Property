@@ -88,6 +88,12 @@
     }
 }
 
+@media (max-width: 766px){
+    .login-box{
+        height: 750px !important;
+    }
+}
+
 @media (max-width: 728px) {
     .center-side,
     .left-side,
