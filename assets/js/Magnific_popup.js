@@ -11,6 +11,7 @@ $(document).ready(function(){
         easing: 'ease-in-out'
       }
       });
+    
     $('.video').magnificPopup({
       // disableOn: 700,
       type: 'iframe',
