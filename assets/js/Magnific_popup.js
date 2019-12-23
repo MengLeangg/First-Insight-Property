@@ -11,6 +11,43 @@ $(document).ready(function(){
         easing: 'ease-in-out'
       }
       });
+      $('.gallery-link').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-no-margins mfp-with-zoom',
+          image: {
+          verticalFit: true
+        },
+        zoom: {
+          enabled: true,
+          duration: 300,
+          easing: 'ease-in-out'
+        }
+        });
+
+      // $('.gallery-link').magnificPopup({
+      //   type: 'image',
+      //   closeOnContentClick: true,
+      //   closeBtnInside: false,
+      //   mainClass: 'mfp-with-zoom mfp-img-mobile',
+      //   image: {
+      //     verticalFit: true,
+      //     titleSrc: function(item) {
+      //       return item.el.find('figcaption').text() || item.el.attr('title');
+      //     }
+      //   },
+      //   zoom: {
+      //     enabled: true
+      //   },
+      //   // duration: 300
+      //   gallery: {
+      //     enabled: true,
+      //     navigateByImgClick: false,
+      //     tCounter: ''
+      //   },
+      //   disableOn: function() {
+      //     return $(window).width() > 640;
+      //   }
+      // });
     
     // $('.video').magnificPopup({
     //   // disableOn: 700,
