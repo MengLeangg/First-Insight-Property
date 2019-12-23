@@ -21,8 +21,11 @@
 
 /* BASIC 
 **************************************/
-
+html{
+    
+}
 body {
+    
     font-size: 15px;
     line-height: 10px;
     background-color: #ffffff;
