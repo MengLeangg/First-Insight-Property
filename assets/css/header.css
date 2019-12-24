@@ -1,0 +1,276 @@
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header style goes here */
+.color-nav-active {
+  color: #333 !important;
+}
+
+#Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 9;
+}
+
+#Header.header-fixed {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header.header-fixed .site-logo-wrap {
+  padding: 15px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header.header-fixed .site-logo-wrap .logo img {
+  width: 70px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header.header-fixed .main-menu {
+  padding: 27px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header.header-fixed .main-menu li a {
+  padding: 5px 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header.header-fixed a.menu-trigger {
+  top: 22px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header .site-logo-wrap {
+  width: 30%;
+  float: left;
+  padding: 30px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header .site-logo-wrap .logo {
+  color: #fff;
+  font-size: 24px;
+  font-style: italic;
+  display: inline-block;
+}
+
+#Header .site-logo-wrap .logo img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+}
+
+#Header .main-menu {
+  width: 70%;
+  text-align: right;
+  float: right;
+  padding: 30px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header .main-menu li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+#Header .main-menu li a {
+  position: relative;
+  font-size: 16px;
+  color: #FFD700;
+  padding: 15px 10px;
+}
+
+#Header .main-menu li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0098aa;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#Header .main-menu li a:hover::before, #Header .main-menu li a.active::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* mobile menu style*/
+#Header .mobile-menu {
+  width: 180px;
+  left: -180px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  -webkit-transition: left .5s .5s;
+  transition: left .5s .5s;
+}
+
+#Header .mobile-menu.visible {
+  left: 0;
+  -webkit-transition: left .5s;
+  transition: left .5s;
+}
+
+#Header .mobile-menu ul {
+  margin-top: 150px;
+}
+
+#Header .mobile-menu ul li {
+  list-style: none;
+  padding: 0 0 30px 40px;
+}
+
+#Header .mobile-menu ul li a {
+  font-size: 16px;
+  color: #fff;
+  padding: 0;
+}
+
+/* menu toggler style */
+#Header a.menu-trigger {
+  cursor: pointer;
+  position: relative;
+  top: 35px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#Header a.menu-trigger span,
+#Header a.menu-trigger span:before,
+#Header a.menu-trigger span:after {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: white;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  left: 0;
+}
+
+#Header a.menu-trigger span:before,
+#Header a.menu-trigger span:after {
+  content: "";
+}
+
+#Header a.menu-trigger span {
+  top: 10px;
+}
+
+#Header a.menu-trigger span:before {
+  -webkit-transform-origin: 33% 100%;
+  transform-origin: 33% 100%;
+  top: -10px;
+  z-index: 10;
+}
+
+#Header a.menu-trigger span:after {
+  -webkit-transform-origin: 33% 0;
+  transform-origin: 33% 0;
+  top: 10px;
+}
+
+#Header a.menu-trigger.active span,
+#Header a.menu-trigger.active span:before,
+#Header a.menu-trigger.active span:after {
+  background-color: transparent;
+}
+
+#Header a.menu-trigger.active span:before {
+  -webkit-transform: translateY(4px) translateX(1px) rotate(45deg);
+  transform: translateY(4px) translateX(1px) rotate(45deg);
+  background-color: white;
+}
+
+#Header a.menu-trigger.active span:after {
+  -webkit-transform: translateY(-8px) translateX(1px) rotate(-45deg);
+  transform: translateY(-8px) translateX(1px) rotate(-45deg);
+  background-color: white;
+}
+
+/*Banner style goes here */
+#HeroBanner {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/banner.jpg) no-repeat 0 0/cover;
+  background-attachment: fixed;
+}
+
+#HeroBanner .container.hero-content {
+  display: table-cell;
+  background-color: rgba(10, 40, 60, 0.7);
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 12em;
+}
+
+#HeroBanner .hero-content h1 {
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+#HeroBanner .hero-content p {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 30px;
+}
+
+#HeroBanner .hero-content .hero-cta {
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 0;
+  display: inline-block;
+  padding: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#HeroBanner .hero-content .hero-cta:hover {
+  color: #fff;
+  background-color: #FFD700;
+  border: 2px solid #FFD700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* services section style goes here */
+/*# sourceMappingURL=header.css.map */
