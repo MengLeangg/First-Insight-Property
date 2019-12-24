@@ -206,8 +206,11 @@
     .group label{
         font-size: 14px !important;
     }
+    
+}
+@media (max-width: 592px){
     #HeroBanner .container.hero-content{
-        padding: 0px 15px !important;
+        padding: 0px 10px !important;
     }
 }
 
@@ -296,7 +299,12 @@
         display: inline-block;
     }
     #HeroBanner .container.hero-content{
-        padding: 0px 5em !important;
+        padding: 0px 3em !important;
+    }
+}
+@media (max-width: 500px) {
+    #HeroBanner .container.hero-content{
+        padding: 0px 1em !important;
     }
 }
 

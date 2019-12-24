@@ -111,21 +111,18 @@ ul, li {
 }
 /* mobile menu style*/
 #Header .mobile-menu {
-	width: 180px;
-	left: -180px;
-	background-color: rgba(0, 0, 0, 1);
+	width: 100%;
+	left: -100%;
+    // background-color: rgb(29, 142, 235);
+    background-image: linear-gradient(-90deg, rgb(197, 55, 55), rgb(255,215,0));
 	position: absolute;
 	top: 0;
 	z-index: -1;
 	height: 100vh;
-	-webkit-transition: left .5s .5s;
-	-moz-transition: left .5s .5s;
 	transition: left .5s .5s;
 }
 #Header .mobile-menu.visible {
 	left: 0;
-	-webkit-transition: left .5s;
-	-moz-transition: left .5s;
 	transition: left .5s;
 }
 #Header .mobile-menu ul {
@@ -136,9 +133,11 @@ ul, li {
 	padding: 0 0 30px 40px;
 }
 #Header .mobile-menu ul li a {
+    text-align: center;
 	font-size: 16px;
 	color: #fff;
-	padding: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 /* menu toggler style */
 #Header a.menu-trigger {
