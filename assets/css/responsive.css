@@ -213,6 +213,12 @@
         padding: 0px 10px !important;
     }
 }
+@media (max-width: 575px){
+#ContactUs .add-title {
+    text-align: center;
+    margin: 0 0 30px;
+}
+}
 
 /* @media (max-width: 640px){
     .video-banner-icon-play{

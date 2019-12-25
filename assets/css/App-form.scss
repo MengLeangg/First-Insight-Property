@@ -119,3 +119,189 @@ $color-main: #150A59;
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
 }
+
+// Check box style==============================
+
+input[type=radio] {
+  opacity: 0;
+}
+.chk{
+  height: 30px !important;
+  width: 30px !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.box1 {
+  margin: 0 auto;
+  clear: none;
+  color: #b1b1b1;
+}
+.box1 p{
+  margin-left: 4%;
+}
+.bump {
+  margin-left: 25px;
+  position: relative
+}
+
+/* Checkmark style starts */
+
+@-moz-keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+@-webkit-keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 30px;
+  }
+}
+
+@-webkit-keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 30px;
+  }
+}
+
+@-moz-keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 30px;
+  }
+}
+
+.check-box {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: 2px solid #838383;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: border-color ease 0.2s;
+  -o-transition: border-color ease 0.2s;
+  -webkit-transition: border-color ease 0.2s;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+}
+.check-box::before,
+.check-box::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  height: 0;
+  width: 5px;
+  background-color: #f4c015;
+  display: inline-block;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-radius: 2px;
+  content: ' ';
+  -webkit-transition: opacity ease .5;
+  -moz-transition: opacity ease .5;
+  transition: opacity ease .5;
+}
+.check-box::before {
+  top: 20px;
+  left: 15px;
+  box-shadow: 0 0 0 3px #ffffff;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.check-box::after {
+  top: 10px;
+  left: 4px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type=radio]:checked + .check-box,
+.check-box.checked {
+  border-color: #f4c015;
+}
+
+input[type=radio]:checked + .check-box::after,
+.check-box.checked::after {
+  height: 10px;
+  -moz-animation: dothabottomcheck 0.2s ease 0s forwards;
+  -o-animation: dothabottomcheck 0.2s ease 0s forwards;
+  -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+  animation: dothabottomcheck 0.2s ease 0s forwards;
+}
+
+input[type=radio]:checked + .check-box::before,
+.check-box.checked::before {
+  height: 60px;
+  -moz-animation: dothatopcheck 0.4s ease 0s forwards;
+  -o-animation: dothatopcheck 0.4s ease 0s forwards;
+  -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+  animation: dothatopcheck 0.4s ease 0s forwards;
+}
+.grey {
+  color: rgb(51, 51, 51) !important;
+}
+.btn.submit{
+  background: transparent;
+  width: 40% !important;
+  border-radius: 10px !important;
+  border: 1.5px solid rgb(255,215,0);
+  font-family: 'Montserrat', sans-serif;
+}
+.btn.submit:hover{
+  background: rgb(255,215,0) !important;
+  color: #FFF;
+}

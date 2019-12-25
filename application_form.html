@@ -39,10 +39,13 @@
 
 <!-- Version Garden CSS for this template -->
 <link href="assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="assets//css/header.css">
+<link rel="stylesheet" href="assets/css/checkbox.css">
 
 <link rel="stylesheet" href="assets/css/App-form.css">
 
 <!-- script for jQuery -->
+<!-- <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!-- Link to Owl carousel -->
@@ -56,227 +59,186 @@
 
 <body>
 
-    <div id="wrapper">
-
-        <div class="topbar-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 hidden-md-down hidden-xs-down text-left">
-                        <div class="topsocial">
-                            <a href="https://web.facebook.com/FIRST-Insight-Property-109238730514876/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook-f"></i></a>
-                            <a href="https://wa.me/60137209008" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Contact Us">+60137209008/ +60137996006/ +85589821440</a>
-                        </div>
-                        <!-- end social -->
-                    </div>
-
-                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-right email-language">
-                        <a class="email-top desktop" href="" class="mt-5">firstinsightproperty@gmail.com</a>
-                        <!-- <a class="eng pl-4" href=""><img src="images/language/united-states.png" alt=""> ENG |</a>
-                        <a class="kh" href=""><img src="images/language/cambodia.png" alt=""> ខ្មែរ</a> -->
-                    </div>
-                    <!-- end col -->
-                    <div class="email-top mobile d-none">
-                        <a href="" class="mt-5">firstinsightproperty@gmail.com</a>
-                    </div>
+    <header id="Header" class="">
+        <nav class="main-navigation">
+            <div class="container clearfix">
+                <div class="site-logo-wrap animatable bounceInLeft">
+                    <a class="logo" href="#"><img src="assets/images/logo.png" alt="First Insight Property"></a>
                 </div>
-                <!-- end row -->
+                <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
+                <div class="main-menu hidden-md-down">
+                    <ul class="menu-list animatable bounceInRight">
+                        <li><a class="nav-link" href="index.html" data-target="">Home</a></li>
+                        <li><a class="nav-link" href="about-us.html" data-target="">About Us</a></li>
+                        <li><a class="nav-link" href="exhibition.html" data-target="">Exhibition</a></li>
+                        <li><a class="nav-link" href="gallery.html" data-target="">Gallery</a></li>
+                        <li><a class="nav-link active" href="application_form.html" data-target="">Application Form</a></li>
+                        <li><a class="nav-link" href="contact-us.html" data-target="">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <!-- end header-logo -->
-        </div>
+            <div class="mobile-menu hidden-lg-up">
+                <ul class="mobile-menu-list">
+                    <li><a class="nav-link" href="index.html" data-target="">Home</a></li>
+                    <li><a class="nav-link" href="about-us.html" data-target="">About Us</a></li>
+                    <li><a class="nav-link" href="exhibition.html" data-target="">Exhibition</a></li>
+                    <li><a class="nav-link" href="gallery.html" data-target="">Gallery</a></li>
+                    <li><a class="nav-link active" href="application_form.html" data-target="">Application Form</a></li>
+                    <li><a class="nav-link" href="contact-us.html" data-target="">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+            
+    <section id="ContactUs" style="margin-top: 150px">
+        <div class="container contact-container">
+            <h3 class="contact-title">Application Form</h3>
+            <div class="contact-outer-wrapper">
+                <div class="form-wrap">
+                   <form action="">
 
-        <div class="header-section">
-                <div class="container">
+                    <p class="add-title">Company Detail</p>
+                    
+                    <div class="floating-label float-left">
+                        <input type="text" class="floating-input" name="full name" id="full-name-field" />
+                        <label for="full-name-field">Company Name</label>
+                    </div>
+                    <div class="floating-label float-right">
+                        <input type="email" class="floating-input" name="email" id="mail-field" />
+                        <label for="mail-field">Company Address</label>
+                    </div>
+                    <div class="floating-label float-left">
+                        <input type="tel" class="floating-input" name="contact" id="contact-us-field" />
+                        <label for="contact-us-field">Phone</label>
+                    </div>
+                    <div class="floating-label float-right">
+                        <input type="text" class="floating-input" name="company" id="company-field" />
+                        <label for="company-field">Email</label>
+                    </div>
+                    <div class="floating-label float-left">
+                        <input type="tel" class="floating-input" name="contact" id="contact-us-field" />
+                        <label for="contact-us-field">Website</label>
+                    </div>
+                    <div class="floating-label float-right">
+                        <input type="text" class="floating-input" name="company" id="company-field" />
+                        <label for="company-field">Tax Reg. No</label>
+                    </div>
+
+                    <p class="add-title">Participation Contact Person</p>
+                    
+                    <div class="floating-label float-left">
+                        <input type="text" class="floating-input" name="full name" id="full-name-field" />
+                        <label for="full-name-field">Name</label>
+                    </div>
+                    <div class="floating-label float-right">
+                        <input type="email" class="floating-input" name="email" id="mail-field" />
+                        <label for="mail-field">Phone</label>
+                    </div>
+
+                    <p class="add-title">Payment Contact Person</p>
+                    
+                    <div class="floating-label float-left">
+                        <input type="text" class="floating-input" name="full name" id="full-name-field" />
+                        <label for="full-name-field">Name</label>
+                    </div>
+                    <div class="floating-label float-right">
+                        <input type="email" class="floating-input" name="email" id="mail-field" />
+                        <label for="mail-field">Work Phone</label>
+                    </div>
+                    <div class="floating-label">
+                        <input type="email" class="floating-input" name="email" id="mail-field" />
+                        <label for="mail-field">Email</label>
+                    </div>
+
+                    <p class="add-title">SPONSORSHIP <br> <span>Price List</span></p>
+
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="logo animatable moveUp">
-                                <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                            <div class="box1">
+                                <input class="chk" id="opt1" type="radio" name="group1">
+                                <label for="opt1" class="check-box"></label>
+                                <div class="check-description">
+                                    <p>Option1 : <strong>Platinum Sponsor</strong> <br> Company logo in all material of the event in 1/1 ratio and privileged stand 16m <sup>2</sup> dependence on availability. <br>Cost: <strong>USD 30,000.00</strong></p>
+                                </div>
                             </div>
-                            <!-- end logo -->
                         </div>
                     </div>
-                    <!-- end row -->
-                </div>
-                <!-- end header-logo -->
-            </div><!-- end header -->
 
-
-            
-            <header class="header">
-                <div class="container" style="width: 100% !important; background-color: #150A59;">
-                    <nav class="navbar navbar-inverse navbar-toggleable-md">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cloapediamenu" aria-controls="cloapediamenu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-md-center" id="cloapediamenu">
-                            <ul class="navbar-nav animatable bounceInRight">
-                                <li class="nav-item">
-                                    <a class="nav-link color-green-hover" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link color-green-hover" href="about-us.html">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link color-green-hover" href="exhibition.html">Exhibition</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link color-green-hover" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item current-menu">
-                                    <a class="nav-link color-green-hover" href="application_form.html">Application Form</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link color-green-hover" href="contact-us.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <!-- end container -->
-            </header>
-            <!-- end header -->
-            
-            <div id="app-form" class="container mt-5">
-                <div class="row">
-                    <div class="col-md-1"></div>
-
-                    <div class="col-md-10">
-                        <div class="login-box">
-                            <h2 class="animatable bounceIn text-center">Application Form</h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="lb-header">
-                                        <a href="#app-form" class="active" id="company-link">Company Detail</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="lb-header">
-                                        <a href="#app-form" id="participation-link">Participation</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="lb-header">
-                                        <a href="#app-form" id="payment-link">Payment</a>
-                                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box1">
+                                <input class="chk" id="opt1" type="radio" name="group1">
+                                <label for="opt1" class="check-box"></label>
+                                <div class="check-description">
+                                    <p>Option2 : <strong>Gold Sponsor</strong> <br> Company logo in all material of the event in 1/2 ratio and privileged stand 16m <sup>2</sup> dependence on availability. <br>Cost: <strong>USD 20,000.00</strong></p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
-                    <form action=""  style="padding-top: 20px;">
-                        <div class="company-detail">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Company Name</label>
-                                    </div>
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Phone</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Company Address</label>
-                                    </div>
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Website</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Tax Reg. No</label>
-                                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box1">
+                                <input class="chk" id="opt1" type="radio" name="group1">
+                                <label for="opt1" class="check-box"></label>
+                                <div class="check-description">
+                                    <p>Option3 : <strong>Silver Sponsor</strong> <br> Company logo in all material of the event in 1/3 ratio and privileged stand 12m <sup>2</sup> dependence on availability. <br>Cost: <strong>USD 10,000.00</strong></p>
                                 </div>
                             </div>
-
-                            <button class="btn-submit btn-submit-hover">Submit</button>
                         </div>
+                    </div>
 
-                        <div class="participation">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Name</label>
-                                    </div>
-                                </div>
+                    <p class="add-title">EXHIBITION SPACE RENTAL</p>
 
-                                <div class="col-md-6">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Phone</label>
-                                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box1">
+                                <input class="chk" id="opt1" type="radio" name="checkbox">
+                                <label for="opt1" class="check-box" name="sponsor"></label>
+                                <div class="check-description">
+                                    <p>Option1 : <strong>EXHIBITION SPACE 4m x 4m</strong> <br>Cost: <strong>USD 30,000.00</strong></p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box1">
+                                <input class="chk" id="opt1" type="radio" name="checkbox">
+                                <label for="opt1" class="check-box" name="sponsor"></label>
+                                <div class="check-description">
+                                    <p>Option2 : <strong>EXHIBITION SPACE 3m x 3m</strong> <br>Cost: <strong>USD 20,000.00</strong></p>
                                 </div>
                             </div>
-                            <button class="btn-submit btn-submit-hover">Submit</button>
                         </div>
+                    </div>
 
-                        <div class="payment">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Name</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Work Phone</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="group">      
-                                        <input type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Email</label>
-                                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box1">
+                                <input class="chk" id="opt1" type="radio" name="checkbox">
+                                <label for="opt1" class="check-box"></label>
+                                <div class="check-description">
+                                    <p>Option3 : <strong>EXHIBITION SPACE 2m x 2m</strong> <br>Cost: <strong>USD 10,000.00</strong></p>
                                 </div>
                             </div>
-                            <button class="btn-submit btn-submit-hover">Submit</button>
                         </div>
-                    </form>
+                    </div>
+
+                    <div class="submit-btn">
+                        <input class="btn submit" type="submit" value="Submit">
+                    </div>
+
+                   </form>
                 </div>
             </div>
-            <div class="col-md-1"></div>
         </div>
+    </section>
 
-        <div class="row mt-5">
+        <div class="row">
             <div class="col-md-12 text-center">
-                <h2 class="animatable bounceIn text-center">Boots</h2>
+                <h2 class="animatable bounceIn text-center">Booth Specification</h2>
             </div>
         </div>
 
@@ -353,8 +315,12 @@
     </script>
     
     <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- <script src='https://code.jquery.com/ui/1.10.4/jquery-ui.min.js'></script> -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/all-plugins.js"></script>
     <script src="assets/js/scroll_animate.js"></script>
+    <script src="assets/js/header.js"></script>
     <script src="assets/js/tether.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- <script src="assets/js/popper.min.js"></script> -->

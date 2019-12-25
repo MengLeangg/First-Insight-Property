@@ -315,30 +315,30 @@ a:focus,
 
 /* Style Button */
 .btn {
-    box-sizing: border-box;
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid $color-main;
-    border-radius: 2em;
-    color: $color-main;
-    cursor: pointer;
-    align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    //margin: 20px;
-    // padding: 1.2em 2.8em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    // box-sizing: border-box;
+    // appearance: none;
+    // background-color: transparent;
+    // border: 2px solid $color-main;
+    // border-radius: 2em;
+    // color: $color-main;
+    // cursor: pointer;
+    // align-self: center;
+    // font-size: 1rem;
+    // font-weight: 400;
+    // line-height: 1;
+    // //margin: 20px;
+    // // padding: 1.2em 2.8em;
+    // text-decoration: none;
+    // text-align: center;
+    // text-transform: uppercase;
+    // font-family: 'Montserrat', sans-serif;
+    // font-weight: 700;
   
-    &:hover,
-    &:focus {
-      color: #fff;
-      outline: 0;
-    }
+    // &:hover,
+    // &:focus {
+    //   color: #fff;
+    //   outline: 0;
+    // }
   }
 .one{
     border-color: $color-main;

@@ -24,3 +24,11 @@ $("#payment-link").click(function(){
     $("#company-link").removeClass("active");
     $("#participation-link").removeClass("active");
 });
+
+// function onlyOne(checkbox) {
+//   var checkboxes = document.getElementsByName('group1[]')
+//   checkboxes.forEach((item) => {
+//       if (item !== checkbox) item.checked = false;
+//   })
+// }
+  
