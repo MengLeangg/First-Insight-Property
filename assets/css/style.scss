@@ -20,6 +20,8 @@ $gray-lightest:             lighten($gray-lighter,4%);
 $main-font : 'HelveticaNeueLTStd', Battambang;
 
 $color-main: #150A59;
+$color-main-new : #FFD34E;
+
 $white : #fff;
 
 h1,
@@ -167,8 +169,8 @@ h2{
 .page-link,
 .topbar-section {
 	color:#ffffff !important;
-	background-color: $color-main !important;
-	border-color: $color-main !important;
+	background-color: $color-main-new !important;
+	border-color: $color-main-new !important;
 }
 .navbar-toggler{
   outline: none !important;
@@ -803,7 +805,7 @@ a:focus,
   font-size:15px;
   line-height:24px;
   color:#737373;
-  box-shadow: 0 -5px 5px -5px $color-main;
+  box-shadow: 0 -5px 5px -5px $color-main-new;
   box-sizing: border-box;
 }
 .site-footer hr

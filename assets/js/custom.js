@@ -6,6 +6,14 @@
 **************************************/
 
 (function($) {
+    // Init Wow
+    wow = new WOW({
+        animateClass: 'animated',
+        offset: 100
+    });
+    wow.init();
+
+    
     "use strict";
     $(document).ready(function() {
         $('#nav-expander').on('click', function(e) {

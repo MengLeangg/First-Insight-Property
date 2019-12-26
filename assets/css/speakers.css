@@ -267,20 +267,20 @@
 }
 
 .material-card.Red h2 {
-  background-color: #150A59;
+  background-color: #FFD34E;
 }
 
 .material-card.Red h2:after {
-  border-top-color: #150A59;
-  border-right-color: #150A59;
+  border-top-color: #FFD34E;
+  border-right-color: #FFD34E;
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
 
 .material-card.Red h2:before {
   border-top-color: transparent;
-  border-right-color: #150A59;
-  border-bottom-color: #150A59;
+  border-right-color: #FFD34E;
+  border-bottom-color: #FFD34E;
   border-left-color: transparent;
 }
 

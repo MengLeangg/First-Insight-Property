@@ -1,4 +1,5 @@
 $color-main: #150A59;
+$color-main-new : #FFD34E;
 .fa-spin-fast {
   animation: fa-spin-fast 0.2s infinite linear;
 }
@@ -265,18 +266,18 @@ $color-main: #150A59;
   top: -32px;
 }
 .material-card.Red h2 {
-  background-color: $color-main;
+  background-color: $color-main-new;
 }
 .material-card.Red h2:after {
-  border-top-color: $color-main;
-  border-right-color: $color-main;
+  border-top-color: $color-main-new;
+  border-right-color: $color-main-new;
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
 .material-card.Red h2:before {
   border-top-color: transparent;
-  border-right-color: $color-main;
-  border-bottom-color: $color-main;
+  border-right-color: $color-main-new;
+  border-bottom-color: $color-main-new;
   border-left-color: transparent;
 }
 .material-card.Red.mc-active h2:before {

@@ -32,9 +32,11 @@ $(document).ready(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 60) {
             $("#Header").addClass("header-fixed");
+            $("#Header").addClass("shadow");
             $("#Header .main-menu li a").addClass("color-nav-active");
         } else {
             $("#Header").removeClass("header-fixed");
+            $("#Header").removeClass("shadow");
             $("#Header .main-menu li a").removeClass("color-nav-active");
         }
     });

@@ -32,6 +32,10 @@
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="assets/css/default_style.css">
 
+<!-- Animation styles for this template -->
+<link rel="stylesheet" href="assets/css/animate.css">
+
+
 <!-- Responsive styles for this template -->
 <link href="assets/css/responsive.css" rel="stylesheet">
 
@@ -42,7 +46,7 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/App-form.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/speakers.css">
-<link rel="stylesheet" href="assets//css/header.css">
+<link rel="stylesheet" href="assets/css/header.css">
 
 <!-- script for jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -59,22 +63,26 @@
 
 <body>
 
-    <header id="Header">
-        <nav class="main-navigation">
+    <header id="Header" style="box-shadow: none;">
+        <nav class="main-navigation navbar-fixed-top">
             <div class="container clearfix">
-                <div class="site-logo-wrap animatable bounceInLeft">
-                    <a class="logo" href="#"><img src="assets/images/logo.png" alt="First Insight Property"></a>
-                </div>
-                <a href="javascript:void(0)" class="menu-trigger index hidden-lg-up"><span>&nbsp;</span></a>
-                <div class="main-menu hidden-md-down">
-                    <ul class="menu-list animatable bounceInRight">
-                        <li><a class="nav-link active" href="index.html" data-target="">Home</a></li>
-                        <li><a class="nav-link" href="about-us.html" data-target="">About Us</a></li>
-                        <li><a class="nav-link" href="exhibition.html" data-target="">Exhibition</a></li>
-                        <li><a class="nav-link" href="gallery.html" data-target="">Gallery</a></li>
-                        <li><a class="nav-link" href="application_form.html" data-target="">Application Form</a></li>
-                        <li><a class="nav-link" href="contact-us.html" data-target="">Contact Us</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="site-logo-wrap animatable bounceInLeft">
+                            <a class="logo" href="#"><img src="assets/images/logo.png" alt="First Insight Property"></a>
+                        </div>
+                        <a href="javascript:void(0)" class="menu-trigger home-page hidden-lg-up"><span>&nbsp;</span></a>
+                        <div class="main-menu hidden-md-down">
+                            <ul class="menu-list animatable bounceInRight">
+                                <li><a class="nav-link active" href="index.html" data-target="">Home</a></li>
+                                <li><a class="nav-link" href="about-us.html" data-target="">About Us</a></li>
+                                <li><a class="nav-link" href="exhibition.html" data-target="">Exhibition</a></li>
+                                <li><a class="nav-link" href="gallery.html" data-target="">Gallery</a></li>
+                                <li><a class="nav-link" href="application_form.html" data-target="">Application Form</a></li>
+                                <li><a class="nav-link" href="contact-us.html" data-target="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="mobile-menu hidden-lg-up">
@@ -91,7 +99,7 @@
     </header>
 
     <section id="HeroBanner">
-        <div class="container hero-content">
+        <div class="container hero-content wow fadeInUp delay-05s">
             <div class="row">
                 <div class="col-md-12 text-left">
                     <p style="font-size: 2.5em; font-family: 'Montserrat', sans-serif;">“The largest property conference in Singapore”</p>
@@ -102,16 +110,14 @@
                     <h3 style="color: rgb(223, 217, 217)">First Insight Property gathers the people and companies redefining tech.</h3>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <a href="application_form.html" class="hero-cta" style="width: 100%;">Pre-register for 2020</a>
+                    <!-- <a href="application_form.html" class="hero-cta" style="width: 100%;">Pre-register for 2020</a> -->
+                    <a href="application_form.html"><button type="submit" class="btn btn-submit-banner">Pre-register for 2020</button></a>
                 </div>
             </div>
             <div class="row mt-3 text-left">
                 <div class="col-md-4 col-sm-12">
-                    <!-- <p style="color:#FFD700;">Join us at 27-29 March 2020</p> -->
                 </div>
             </div>
-            
-
         </div>
     </section>
 
@@ -530,6 +536,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/wow.js"></script>
     <script src="assets/js/function.js"></script>
     <script src="assets/js/App-form.js"></script>
     <script src="assets/js/Magnific_popup.js"></script>

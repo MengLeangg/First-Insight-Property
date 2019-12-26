@@ -109,8 +109,8 @@ h2 {
 .page-link,
 .topbar-section {
   color: #ffffff !important;
-  background-color: #150A59 !important;
-  border-color: #150A59 !important;
+  background-color: #FFD34E !important;
+  border-color: #FFD34E !important;
 }
 
 .navbar-toggler {
@@ -673,8 +673,8 @@ a:focus,
   font-size: 15px;
   line-height: 24px;
   color: #737373;
-  -webkit-box-shadow: 0 -5px 5px -5px #150A59;
-          box-shadow: 0 -5px 5px -5px #150A59;
+  -webkit-box-shadow: 0 -5px 5px -5px #FFD34E;
+          box-shadow: 0 -5px 5px -5px #FFD34E;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
