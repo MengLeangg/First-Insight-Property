@@ -109,7 +109,8 @@ ul, li {
 	width: 100%;
 	left: -100%;
     // background-color: rgb(29, 142, 235);
-    background-image: linear-gradient(-90deg, rgb(197, 55, 55), rgb(255,215,0));
+	// background-image: linear-gradient(-90deg, rgb(197, 55, 55), rgb(255,215,0));
+	background: rgb(156, 153, 153);
 	position: absolute;
 	top: 0;
 	z-index: -1;
@@ -135,6 +136,7 @@ ul, li {
 	line-height: 1.5;
 	font-family: 'Open Sans', sans-serif;
 }
+
 /* menu toggler style */
 #Header a.menu-trigger {
   cursor: pointer;
