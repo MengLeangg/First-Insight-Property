@@ -135,7 +135,7 @@ ul, li {
 #Header .mobile-menu {
   width: 100%;
   left: -100%;
-  background: #9c9999;
+  background: #FFD34E;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -160,12 +160,13 @@ ul, li {
 }
 
 #Header .mobile-menu ul li a {
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  padding: 0;
-  line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* menu toggler style */
@@ -245,16 +246,17 @@ ul, li {
 
 /*Banner style goes here */
 #HeroBanner {
-  display: table;
-  width: 100%;
-  height: 100vh;
-  background: url(../images/banner.jpg) no-repeat 0 0/cover;
-  background-attachment: fixed;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/banner1.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
 }
 
 #HeroBanner .container.hero-content {
   display: table-cell;
-  background-color: rgba(10, 40, 60, 0.7);
+  background-color: rgba(0,0,0,.4);
   text-align: center;
   vertical-align: middle;
   padding: 0 12em;
@@ -265,6 +267,7 @@ ul, li {
   color: #fff;
   text-transform: uppercase;
   margin: 0 0 20px;
+  line-height: 45px;
 }
 
 #HeroBanner .hero-content p {
